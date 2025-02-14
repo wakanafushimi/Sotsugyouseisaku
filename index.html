@@ -7,30 +7,101 @@
     <title>JAPONISM ～ TO THE WORLD ～</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #f0f4f8, #e6eff7);
         }
 
         header,
         footer {
-            background: #333;
-            color: #fff;
+            background: #2d4059;
+            color: #f8b400;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            font-size: 1.5em;
         }
 
         main {
-            padding: 20px;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 500px) {
+            .mainSection {
+                display: flex;
+                gap: 50px;
+            }
+
+            .sectionText {
+                width: 70%;
+            }
         }
 
         h2 {
+            color: #2d4059;
+            border-bottom: 2px solid #f8b400;
+            padding-bottom: 5px;
+        }
+
+        p,
+        ul {
             color: #333;
+            font-size: 1.1em;
+        }
+
+        footer p {
+            color: #f8b400;
+        }
+
+        .gallery,
+        .gallerySingle {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img,
+        .gallerySingle img {
+            width: 100%;
+            height: 200px;
+            border: 2px solid #2d4059;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sectionImg {
+            width: 400px;
+            margin-top: 70px;
+        }
+
+        .sectionImg img {
+            width: 100%;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        a {
+            color: #f8b400;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -40,25 +111,38 @@
         <h1>JAPONISM ～ TO THE WORLD ～</h1>
     </header>
     <main>
-        <section>
-            <h2>概要</h2>
-            <p>未来創造展のテーマに基づき、日本文化や防災技術を活用したプロジェクトです。JAPONISMのテーマに沿って、日本の伝統文化と技術の融合を目指し、世田谷区の地域課題に対応するためのシステムを考案しました。</p>
+        <!-- <section class="mainSection">
+            
+            
+        </section> -->
+        <section class="mainSection">
+            <div class="sectionText">
+                <h2>概要</h2>
+                <p>未来創造展のテーマに基づき、日本文化や防災技術を活用したプロジェクトです。JAPONISMのテーマに沿って、日本の伝統文化と技術の融合を目指し、世田谷区の地域課題に対応するためのシステムを考案しました。
+                </p>
+                <h2>テーマと背景</h2>
+                <p>JAPONISMとは、日本の伝統文化（日本食、アニメ、妖怪、地震、浮世絵など）を世界へ発信するコンセプトです。世田谷区の自治体課題の解決をテーマに、未来創造展に相応しい企画として、グループメンバー全員で検討しました。
+                </p>
+            </div>
+            <div class="sectionImg">
+                <img src="images/miraizou .webp" alt="概要イメージ">
+            </div>
         </section>
-        <section>
-            <h2>テーマと背景</h2>
-            <p>JAPONISMとは、日本の伝統文化（日本食、アニメ、妖怪、地震、浮世絵など）を世界へ発信するコンセプトです。世田谷区の自治体課題の解決をテーマに、未来創造展に相応しい企画として、グループメンバー全員で検討しました。
-            </p>
-        </section>
-        <section>
-            <h2>地域紹介</h2>
-            <p>システムが対象とする世田谷区の5つの地域を紹介します。</p>
-            <ul>
-                <li><b>北沢地域（豪徳寺）</b>：招き猫の発祥地として知られ、商売繁盛のご利益がある寺院。</li>
-                <li><b>玉川地域（等々力渓谷）</b>：都内唯一の自然渓谷であり、静かな環境と緑豊かな景観が特徴。</li>
-                <li><b>砧地域（ウルトラマン商店街）</b>：ウルトラマンの世界観を反映した商店街で、観光スポットとしても人気。</li>
-                <li><b>世田谷地域（三軒茶屋）</b>：カフェや居酒屋が多く、レトロな雰囲気と都会の利便性を兼ね備えたエリア。</li>
-                <li><b>烏山地域（烏山寺町）</b>：多くの寺院が並ぶ歴史的な街並みを持ち、風情ある景観が魅力。</li>
-            </ul>
+        <section class="mainSection">
+            <div class="sectionText">
+                <h2>地域紹介</h2>
+                <p>システムが対象とする世田谷区の5つの地域を紹介します。</p>
+                <ul>
+                    <li><b>北沢地域（豪徳寺）</b>：招き猫の発祥地として知られ、商売繁盛のご利益がある寺院。</li>
+                    <li><b>玉川地域（等々力渓谷）</b>：都内唯一の自然渓谷であり、静かな環境と緑豊かな景観が特徴。</li>
+                    <li><b>砧地域（ウルトラマン商店街）</b>：ウルトラマンの世界観を反映した商店街で、観光スポットとしても人気。</li>
+                    <li><b>世田谷地域（三軒茶屋）</b>：カフェや居酒屋が多く、レトロな雰囲気と都会の利便性を兼ね備えたエリア。</li>
+                    <li><b>烏山地域（烏山寺町）</b>：多くの寺院が並ぶ歴史的な街並みを持ち、風情ある景観が魅力。</li>
+                </ul>
+            </div>
+            <div class="sectionImg">
+                <img src="images/kakutiiki .webp" alt="概要イメージ">
+            </div>
         </section>
         <section>
             <h2>市場調査</h2>
@@ -99,17 +183,43 @@
                 <li>町を歩くだけで世田谷区にまつわる伝統的芸術に触れ、日本文化の理解が深まる</li>
             </ul>
         </section>
-        <h2>システム詳細</h2>
-        <p>世田谷区の5つの地域を対象に、ホログラムを用いた避難誘導システムを提案しました。<br>システムの主な機能は以下の通りです：</p>
-        <ul>
-            <li>平常時には、各地域に関連する伝統芸術（浮世絵など）をホログラムで表示。</li>
-            <li>災害時には、ホログラムが避難誘導を行い、矢印や記号のみで言語の壁を越えた案内を実現。</li>
-            <li>世田谷区の防災計画と連携し、地域住民と観光客の双方に対応。</li>
-        </ul>
+        <section>
+            <h2>システム詳細</h2>
+            <p>世田谷区の5つの地域を対象に、ホログラムを用いた避難誘導システムを提案しました。<br>システムの主な機能は以下の通りです：</p>
+            <ul>
+                <li>平常時には、各地域に関連する伝統芸術（浮世絵など）をホログラムで表示。</li>
+                <li>災害時には、ホログラムが避難誘導を行い、矢印や記号のみで言語の壁を越えた案内を実現。</li>
+                <li>世田谷区の防災計画と連携し、地域住民と観光客の双方に対応。</li>
+            </ul>
         </section>
-
         <section>
             <h2>当日の様子</h2>
+            <div class="gallery">
+                <div>
+                    <p class="caption">前日審査</p>
+                    <img src="images/sinnsa1.JPG" alt="展示写真1">
+                </div>
+                <div>
+                    <p class="caption">当日の様子1</p>
+                    <img src="images/P1290254.JPG" alt="展示写真2">
+                </div>
+                <div>
+                    <p class="caption">当日の様子2</p>
+                    <img src="images/P1290257.JPG" alt="展示写真3">
+                </div>
+                <div>
+                    <p class="caption">当日の様子3</p>
+                    <img src="images/P1290397.JPG" alt="展示写真4">
+                </div>
+                <div>
+                    <p class="caption">メンバー</p>
+                    <img src="images/P1290411.JPG" alt="展示写真5">
+                </div>
+                <div>
+                    <p class="caption">世田谷区の関係者の方</p>
+                    <img src="images/P1290418.JPG" alt="展示写真5">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
