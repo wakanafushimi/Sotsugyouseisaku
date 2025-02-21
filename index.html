@@ -47,7 +47,7 @@
             }
         }
 
-        h2 {
+        section h2 {
             color: #2d4059;
             border-bottom: 2px solid #f8b400;
             padding-bottom: 5px;
@@ -88,6 +88,25 @@
             width: 100%;
         }
 
+        .ganto {
+            width: 100%;
+        }
+
+        .ganto img,
+        .botu img {
+            width: 100%;
+        }
+
+        .botu {
+            width: 30%;
+        }
+
+        .botuContainer {
+            display: flex;
+            gap: 40px;
+        }
+
+
         .ytLogo {
             width: 100px;
         }
@@ -121,8 +140,13 @@
 <body>
     <header>
         <h1>JAPONISM ～ TO THE WORLD ～</h1>
+        <h2>HAL221</h2>
     </header>
     <main>
+        <section>
+            <h2>A1パネル</h2>
+            <div class="ganto"><img src="images/a1.png" /></div>
+        </section>
         <section class="mainSection">
             <div class="sectionText">
                 <h2>概要</h2>
@@ -233,6 +257,31 @@
                     <p class="caption">世田谷区の関係者の方</p>
                     <img src="images/P1290418.JPG" alt="展示写真5">
                 </div>
+            </div>
+        </section>
+        <section>
+            <h2>メンバー</h2>
+            <ul>
+                <li>安倍悠翔</li>
+                <li>池田昴太</li>
+                <li>オウセイ</li>
+                <li>上村健人</li>
+                <li>チョウギョウ</li>
+                <li>テイハクケン</li>
+                <li>中田一旗</li>
+                <li>伏見和香奈</li>
+                <li>山﨑海和</li>
+            </ul>
+        </section>
+        <section>
+            <h2>作業計画</h2>
+            <div class="ganto"><img src="images/ganto.png" /></div>
+        </section>
+        <section>
+            <h2>不採用となった企画</h2>
+            <div class="botuContainer">
+                <div class="botu"><img src="images/nagaimo.png" /></div>
+                <div class="botu"><img src="images/kaidan.png" /></div>
             </div>
         </section>
     </main>
